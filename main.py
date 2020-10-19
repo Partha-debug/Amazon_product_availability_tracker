@@ -28,6 +28,7 @@ from_ = 'THE NUMBER FROM WHICH YOU WANT TO MAKE THE CALL (this will be provided 
 
 # Defining required functions.
 def check_availability(URL, scraper_api_key):
+    # To prevent from being blocked.
     sleep(randint(30, 40))
     client = ScraperAPIClient(scraper_api_key)
     result = client.get(URL)
@@ -56,7 +57,7 @@ def make_call(account_sid, auth_token, to, from_):
 if __name__ == "__main__":
 
     try:
-        print("Checking for availability...")
+        print("Checking for availability it may take upto 1 min...")
         while True:
             if check_availability(URL, scraper_api_key):
                 print("Product available.\nNotifying you with a call...")
