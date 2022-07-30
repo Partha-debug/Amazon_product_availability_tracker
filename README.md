@@ -10,4 +10,4 @@ Step 3 - Run the command 'pip install -r requirements.txt'
 Step 3 - Run the scipt by the command 'python3 main.py'
 
 It will keep running untill your product is available and upon availability it will ping you with a call.
-For more ease you can also deploy this script in any cloud server like python any where.
+For more ease you can also deploy this script in any cloud server like https://www.pythonanywhere.com/.
